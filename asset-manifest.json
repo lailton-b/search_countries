@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/search_countries/static/js/main.e31285a2.chunk.js",
+    "main.js.map": "/search_countries/static/js/main.e31285a2.chunk.js.map",
+    "runtime-main.js": "/search_countries/static/js/runtime-main.92859c59.js",
+    "runtime-main.js.map": "/search_countries/static/js/runtime-main.92859c59.js.map",
+    "static/js/2.311e3942.chunk.js": "/search_countries/static/js/2.311e3942.chunk.js",
+    "static/js/2.311e3942.chunk.js.map": "/search_countries/static/js/2.311e3942.chunk.js.map",
+    "index.html": "/search_countries/index.html",
+    "precache-manifest.6a555555be1f4409fb1dc5608ca9ceb3.js": "/search_countries/precache-manifest.6a555555be1f4409fb1dc5608ca9ceb3.js",
+    "service-worker.js": "/search_countries/service-worker.js",
+    "static/js/2.311e3942.chunk.js.LICENSE.txt": "/search_countries/static/js/2.311e3942.chunk.js.LICENSE.txt",
+    "static/media/moon.943ce609.svg": "/search_countries/static/media/moon.943ce609.svg",
+    "static/media/search.9873f8db.svg": "/search_countries/static/media/search.9873f8db.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92859c59.js",
+    "static/js/2.311e3942.chunk.js",
+    "static/js/main.e31285a2.chunk.js"
+  ]
+}
