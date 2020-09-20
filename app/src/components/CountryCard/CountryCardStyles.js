@@ -31,6 +31,12 @@ export const Card = styled.li`
   @media screen and (max-width: 370px) {
     max-width: 290px;
   }
+
+  @media screen and (max-width: 380px) {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
 `;
 
 export const Flag = styled.div`
@@ -49,8 +55,8 @@ export const Flag = styled.div`
       min-height: 199px;
     }
 
-    @media screen and (max-width: 370px) {
-      width: 290px;
+    @media screen and (max-width: 380px) {
+      width: 100%;
       min-height: 189px;
     }
   }
