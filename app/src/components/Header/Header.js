@@ -3,6 +3,7 @@ import { Template, Container, Title, Switch } from './HeaderStyles';
 import { ReactComponent as Moon } from '../../img/moon.svg';
 import dark from '../../styles/themes/dark';
 import light from '../../styles/themes/light';
+import { Link } from 'react-router-dom';
 
 const Header = ({ setTheme }) => {
   function switchTheme() {
@@ -14,7 +15,10 @@ const Header = ({ setTheme }) => {
   return (
     <Template>
       <Container>
-        <Title>Where in the world?</Title>
+        <Title>
+          <Link to="search_countries">Where in the world?</Link>
+        </Title>
+
         <Switch onClick={switchTheme}>
           <Moon />
           <span>Dark Mode</span>

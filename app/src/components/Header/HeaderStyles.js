@@ -31,6 +31,14 @@ export const Container = styled.div`
 export const Title = styled.h2`
   font-size: 1.5rem;
 
+  a {
+    color: ${(props) => props.theme.colors.text};
+
+    &:focus {
+      outline: none;
+    }
+  }
+
   @media screen and (max-width: 634px) {
     font-size: 1.1rem;
   }
