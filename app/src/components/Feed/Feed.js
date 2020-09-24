@@ -5,6 +5,7 @@ import { Main, Ul } from './FeedStyles';
 import CountryCard from '../CountryCard/CountryCard';
 import FetchHeader from '../FeedHeader/FeedHeader';
 import CountrySearch from '../CountrySearch/CountrySearch';
+import Loading from '../Helper/Loading/Loading';
 
 const Feed = () => {
   const { data, loading, request } = useFetch();
@@ -13,14 +14,13 @@ const Feed = () => {
 
   React.useEffect(() => {
     async function countriesFetch() {
-      const { url, options } = fetchAll();
+      const { url, options } = fetchAll('name;capital;population;region;flag');
       request(url, options);
     }
     countriesFetch();
   }, [request]);
 
-  if (data === null || data === undefined) return null;
-  if (loading) return <h1>Loading....</h1>;
+  if (loading) return <Loading />;
   if (data)
     return (
       <Main>
@@ -35,7 +35,11 @@ const Feed = () => {
             ? data.map((country) => {
                 if (country.region === region) {
                   return search ? (
-                    <CountrySearch country={country} search={search} />
+                    <CountrySearch
+                      key={country.name}
+                      country={country}
+                      search={search}
+                    />
                   ) : (
                     <CountryCard key={country.name} country={country} />
                   );
@@ -43,7 +47,11 @@ const Feed = () => {
               })
             : data.map((country) => {
                 return search ? (
-                  <CountrySearch country={country} search={search} />
+                  <CountrySearch
+                    key={country.name}
+                    country={country}
+                    search={search}
+                  />
                 ) : (
                   <CountryCard key={country.name} country={country} />
                 );
@@ -51,6 +59,7 @@ const Feed = () => {
         </Ul>
       </Main>
     );
+  else return null;
 };
 
 export default Feed;
