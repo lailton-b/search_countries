@@ -13,7 +13,7 @@ export const CustomSelect = styled.button`
   border-radius: 5px;
   z-index: 10;
   cursor: pointer;
-  transition: box-shadow 0.4s;
+  transition: 0.4s;
 
   &.activeSelect:focus {
     box-shadow: 1px 1px 5px 0px ${(props) => props.theme.colors.shadow};
@@ -101,9 +101,8 @@ export const Option = styled.li`
   }
 `;
 
-export const RemoveSelect = styled.button`
+export const RemoveSelect = styled.span`
   position: relative;
-  width: 20px;
   right: -7px;
   top: 1px;
   height: 12px;
