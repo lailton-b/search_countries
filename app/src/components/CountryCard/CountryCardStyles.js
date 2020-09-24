@@ -6,7 +6,7 @@ export const Card = styled.li`
   margin: 0 15px 75px;
   border-radius: 5px;
   animation: card 0.4s ease-in forwards;
-  transition: 0.3s;
+  transition: transform 0.3s;
   cursor: pointer;
 
   &:hover,
