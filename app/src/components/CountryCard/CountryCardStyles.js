@@ -9,6 +9,10 @@ export const Card = styled.li`
   transition: transform 0.3s;
   cursor: pointer;
 
+  a {
+    display: block;
+  }
+
   &:hover,
   &:focus {
     outline: none;
@@ -71,6 +75,7 @@ export const Name = styled.h3`
   font-size: 1.16rem;
   line-height: 1.1;
   margin-bottom: 20px;
+  color: ${(props) => props.theme.colors.text};
 `;
 
 export const Data = styled.div`
@@ -78,6 +83,7 @@ export const Data = styled.div`
 
   .data_title {
     font-weight: 600;
+    color: ${(props) => props.theme.colors.text};
   }
 
   .data_response {

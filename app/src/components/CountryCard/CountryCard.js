@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const CountryCard = ({ country }) => {
   return (
-    <Link to={'/search_countries/country/' + country.name.toLowerCase()}>
-      <Card>
+    <Card>
+      <Link to={'/search_countries/country/' + country.name.toLowerCase()}>
         <Flag>
           <img src={country.flag} alt={country.name} />
         </Flag>
@@ -28,8 +28,8 @@ const CountryCard = ({ country }) => {
             </Data>
           </div>
         </Info>
-      </Card>
-    </Link>
+      </Link>
+    </Card>
   );
 };
 
