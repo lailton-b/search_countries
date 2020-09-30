@@ -18,9 +18,15 @@ export const Infos = styled.div`
 
 export const Group = styled.ul`
   &:first-child {
+    max-width: 230px;
+
     @media screen and (max-width: 470px) {
       margin-bottom: 40px;
     }
+  }
+
+  &:last-child {
+    max-width: 250px;
   }
 `;
 

@@ -58,8 +58,10 @@ const CountryInfos = ({ data }) => {
         {data[0].currencies && (
           <Info>
             <InfoTitle>Currencies: </InfoTitle>
-            {data[0].currencies.map(({ name }) => (
-              <InfoResponse key={name}>{name}</InfoResponse>
+            {data[0].currencies.map((currency, i, array) => (
+              <InfoResponse key={currency.name}>
+                {array.length - 2 > i ? `${currency.name}, ` : currency.name}
+              </InfoResponse>
             ))}
           </Info>
         )}
